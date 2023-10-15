@@ -2,7 +2,7 @@ import React from 'react'
 
 const Register = () => {
   return (
-    <div className='flex flex-col justify-center items-center h-auto md:h-[100vh]  dark:bg-gray-900 dark:text-white text-gray-900 w-[100vw]'>
+    <div className='flex flex-col justify-center items-center h-auto md:h-[100vh] bg-[url("./bg.png")] bg-cover bg-no-repeat dark:text-white text-gray-900 w-[100vw]'>
         <div className='flex items-center justify-center md:m-10 m-6'>
           <img
             src='./logo.svg'
