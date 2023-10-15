@@ -50,16 +50,16 @@ const Login = () => {
                 </div>
               </div>
               <div className='mt-8'>
-                <button className='px-4 py-2 w-[100%] text-white border-[1.5px] border-slate-600 rounded-lg duration-200 hover:border-gray-900 hover:bg-slate-800 active:text-gray-500 active:shadow-lg'>
+                <button className='px-4 py-2 w-[100%] text-white   rounded-lg duration-200 border-gray-900 bg-slate-800 active:text-gray-500 hover:bg-slate-700 active:shadow-slate-800 active:shadow-md'>
                   <span className='font-[600]'>Login</span>
                 </button>
               </div>
             </form>
             <div className="mt-10">
-              <span className=' text-slate-400 mr-1 '>
+              <span className=' text-slate-400 mr-2 '>
                 Don't have an account?
               </span>
-              <a href="#">Create Account</a>
+              <a href="#" className="text-indigo-600" >Create Account</a>
             </div>
           </div>
         </div>
