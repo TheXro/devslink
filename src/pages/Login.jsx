@@ -3,7 +3,7 @@ import React from "react";
 const Login = () => {
   return (
     <>
-      <div className='flex flex-col justify-center items-center h-screen dark:bg-gray-900 dark:text-white text-gray-900 w-[100vw]'>
+      <div className='flex flex-col justify-center items-center h-screen bg-[url("./bg.png")] dark:text-white text-gray-900 w-[100vw]'>
         <div className='flex items-center justify-center m-10'>
           <img
             src='./logo.svg'
