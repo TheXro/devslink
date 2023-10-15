@@ -21,3 +21,8 @@
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
 }
+
+
+.inputForm:focus-within {
+  border: 1.5px solid #3b3594
+}
