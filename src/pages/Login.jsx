@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Login = () => {
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
+
+
   return (
     <>
       <div className='flex flex-col justify-center items-center h-screen bg-[url("./bg.png")] bg-no-repeat bg-cover dark:text-white text-gray-900 w-[100vw]'>
@@ -29,6 +33,8 @@ const Login = () => {
                 <div className='inputForm flex gap-3 border-[1.5px] border-slate-500 rounded-md p-3 transition duration-150 ease-in relative'>
                   <img src='./images/icon-email.svg' alt='' />
                   <input
+                    value={Email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type='email'
                     className='input border-none outline-none focus:outline-0 w-[80%] bg-transparent placeholder:opacity-70  '
                     required
@@ -42,6 +48,10 @@ const Login = () => {
                 <div className='inputForm flex gap-3 border-[1.5px] border-slate-500 rounded-md p-3 transition duration-150 ease-in relative'>
                   <img src='./images/icon-password.svg' alt='' />
                   <input
+                    value={Password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    name='password'
+                    id='password'
                     type='password'
                     className='input border-none outline-none focus:outline-0 w-[80%] bg-transparent placeholder:opacity-70  '
                     required
@@ -55,11 +65,13 @@ const Login = () => {
                 </button>
               </div>
             </form>
-            <div className="mt-10">
+            <div className='mt-10'>
               <span className=' text-slate-400 mr-2 '>
                 Don't have an account?
               </span>
-              <a href="#" className="text-indigo-600" >Create Account</a>
+              <a href='#' className='text-indigo-600'>
+                Create Account
+              </a>
             </div>
           </div>
         </div>
