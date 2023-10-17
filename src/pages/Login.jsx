@@ -3,7 +3,13 @@ import React, { useState } from "react";
 const Login = () => {
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Are you sure you want to login!`);
+    setEmail("");
+    setPassword("");
 
+  };
 
   return (
     <>
@@ -26,7 +32,7 @@ const Login = () => {
             </span>
           </div>
           <div className='formWrapper'>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className='text-left'>
                 <div className='mt-8 mb-2 text-[14px]'>Email address</div>
 
@@ -60,7 +66,10 @@ const Login = () => {
                 </div>
               </div>
               <div className='mt-8'>
-                <button className='px-4 py-2 w-[100%] text-white   rounded-lg duration-200 border-gray-900 bg-slate-800 active:text-gray-500 hover:bg-slate-700 active:shadow-slate-800 active:shadow-md'>
+                <button
+                  type='submit'
+                  className='px-4 py-2 w-[100%] text-white   rounded-lg duration-200 border-gray-900 bg-slate-800 active:text-gray-500 hover:bg-slate-700 active:shadow-slate-800 active:shadow-md'
+                >
                   <span className='font-[600]'>Login</span>
                 </button>
               </div>
